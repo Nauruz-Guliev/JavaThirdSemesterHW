@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<!--
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ru.kpfu.itis.gnt.gui.MainController>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText"/>
+    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+</VBox>
+!-->
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="ru.kpfu.itis.gnt.gui.MainController">
+
+
+    <top>
+        <MenuBar>
+            <Menu text="Options">
+                <MenuItem text="Save file" onAction="#saveFile"/>
+                <MenuItem text="Exit" onAction="#closeApp"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <Canvas fx:id="canvas" height="400" width="400"/>
+
+    </center>
+
+    <right>
+        <GridPane hgap="20" vgap="20">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+
+
+            <ComboBox fx:id="citiesComboBox" promptText="Choose city"
+                      GridPane.columnIndex="0" GridPane.rowIndex="0"
+                      GridPane.columnSpan="1" maxWidth="Infinity"/>
+
+            <Slider fx:id="drawingsSlider" blockIncrement="1" min="1" majorTickUnit="1"
+                    max="5"
+                    minorTickCount="1" showTickLabels="true" showTickMarks="true"
+                    GridPane.columnIndex="0" GridPane.rowIndex="1"
+                    GridPane.columnSpan="1" maxWidth="Infinity"
+            />
+
+            <Button text="Get weather forecast" onAction="#getWeatherForecast"
+                    GridPane.columnIndex="0" GridPane.rowIndex="2"
+                    GridPane.columnSpan="1" maxWidth="Infinity"
+
+            />
+
+        </GridPane>
+    </right>
+
+</BorderPane>
