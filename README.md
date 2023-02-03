@@ -1,4 +1,4 @@
-## :star: Java Home Works
+# :star: Java Home Works
 This is a collection of some home works that were done during the third semester at KFU ITIS. 
 
 ## :page_with_curl: [File Web Server](https://github.com/Nauruz-Guliev/hw-java-semester3/tree/master/hw-file-webserver)
