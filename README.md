@@ -1,4 +1,4 @@
-## Java Home Works
+## :star: Java Home Works
 This is a collection of some home works that were done during the third semester at KFU ITIS. 
 
 ## :page_with_curl: [File Web Server](https://github.com/Nauruz-Guliev/hw-java-semester3/tree/master/hw-file-webserver)
@@ -24,7 +24,7 @@ This is a collection of some home works that were done during the third semester
 </p>
 
 
-## :envelope: [Chat App](https://github.com/Nauruz-Guliev/hw-java-semester3/tree/master/hw-chat-app)
+## :speech_balloon: [Chat App](https://github.com/Nauruz-Guliev/hw-java-semester3/tree/master/hw-chat-app)
 #### Features 
 * Creating a user by providing a unique username.
 * Exchanging messages and stickers in multi-client chat.
